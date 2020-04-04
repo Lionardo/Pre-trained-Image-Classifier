@@ -1,0 +1,78 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+{'Building_01.jpg': ['building'], 'Dog_01.jpg': ['dog'], 'Dog_02.jpg': ['dog'], 'Honey_badger_01.jpg': ['honey badger']}
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                Building_01.jpg  label:                   building
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:            Honey_badger_01.jpg  label:               honey badger
+
+     MATCH:
+
+ NOT A MATCH:
+
+               Building_01.jpg: 
+Real:                   building   Classifier:                         palace
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 border terrier
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:        wire-haired fox terrier
+
+           Honey_badger_01.jpg: 
+Real:               honey badger   Classifier:                         badger
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+dog
+dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+               Building_01.jpg: 
+Real:                   building   Classifier:                         palace  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                 border terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:        wire-haired fox terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+           Honey_badger_01.jpg: 
+Real:               honey badger   Classifier:                         badger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not Dog Images    :   2
+ 
+pct_correct_dogs    : 100.000
+pct_correct_notdogs : 100.000
+pct_correct_breed   : 0.000
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                 border terrier
+Real:                        dog   Classifier:        wire-haired fox terrier
+
+** Total Elapsed Runtime: 0:1:16
