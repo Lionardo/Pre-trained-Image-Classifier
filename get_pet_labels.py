@@ -44,11 +44,12 @@ def get_pet_labels(image_dir):
     # function
     results_dic = {}
     for listing_file in listdir(image_dir):
-      # print(f"filename = {listing_file} \n value: {listing_file.split('_')}")
-      parse_pet_name = listing_file.lower().split('_')
-      results_dic[listing_file] = [parse_pet_name[0] + ' ' + parse_pet_name[1] if parse_pet_name[1].isalpha() else parse_pet_name[0]]
+      if not listing_file.startswith('.'):
+        parse_pet_name = listing_file.lower().split('_')
+        results_dic[listing_file] = [parse_pet_name[0] + ' ' + parse_pet_name[1] if parse_pet_name[1].isalpha() else parse_pet_name[0]]
     
-    print(results_dic)
+        print(results_dic)
+
     return results_dic
 
 # get_pet_labels("/Users/liomendonca/Documents/Sites/python_learning/udacity_project1/workspace/pet_images")

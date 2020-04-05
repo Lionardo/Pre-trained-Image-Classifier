@@ -2,6 +2,9 @@ Command Line Arguments:
      dir = uploaded_images/ 
     arch = resnet 
  dogfile = dognames.txt
+{'Building_01.jpg': ['building']}
+{'Building_01.jpg': ['building'], 'Dog_01.jpg': ['dog']}
+{'Building_01.jpg': ['building'], 'Dog_01.jpg': ['dog'], 'Dog_02.jpg': ['dog']}
 {'Building_01.jpg': ['building'], 'Dog_01.jpg': ['dog'], 'Dog_02.jpg': ['dog'], 'Honey_badger_01.jpg': ['honey badger']}
 
 Pet Image Label Dictionary has 4 key-value pairs.
